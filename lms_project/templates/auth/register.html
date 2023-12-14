@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<section class="container">
+    <div class="" >
+        <div class="modal-header">
+            <h5 class="modal-title">Sign Up and Start Learning!</h5>
+        </div>
+    
+        <div class="modal-body">
+            <!-- Form Signup -->
+            <form class="mb-5">
+    
+                <!-- Username -->
+                <div class="form-group mb-5">
+                    <label for="modalSignupUsername">
+                        Username
+                    </label>
+                    <input type="text" class="form-control" id="modalSignupUsername" placeholder="John">
+                </div>
+    
+                <!-- Email -->
+                <div class="form-group mb-5">
+                    <label for="modalSignupEmail">
+                        Username or Email
+                    </label>
+                    <input type="email" class="form-control" id="modalSignupEmail" placeholder="johndoe@creativelayers.com">
+                </div>
+    
+                <!-- Password -->
+                <div class="form-group mb-5">
+                    <label for="modalSignupPassword">
+                        Password
+                    </label>
+                    <input type="password" class="form-control" id="modalSignupPassword" placeholder="**********">
+                </div>
+    
+                <!-- Submit -->
+                <button class="btn btn-block btn-primary" type="submit">
+                    SIGN UP
+                </button>
+    
+            </form>
+    
+            <!-- Text -->
+            <p class="mb-0 font-size-sm text-center">
+                Already have an account? <a class="text-underline" data-bs-toggle="collapse" href="#collapseSignin" role="button" aria-expanded="true" aria-controls="collapseSignin">Log In</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+{% endblock  %}
